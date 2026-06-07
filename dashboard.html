@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет — Водить.РФ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wave"></div>
+    <div class="header-bar">
+        <h2><img src="images/boat.png" alt="Водить.РФ"> Водить.РФ</h2>
+        <a href="#" onclick="logout()" class="btn btn-sm btn-outline"><span class="icon icon-gray">выход</span> Выйти</a>
+    </div>
+
+    <div class="card">
+        <h3>Здравствуйте, <span id="user-name">Пользователь</span>!</h3>
+        <a href="new-application.html" class="btn btn-solid btn-mt"><span class="icon icon-white">плюс</span> Новая заявка</a>
+    </div>
+
+    <div class="slider">
+        <div class="slides">
+            <img src="images/po-rekam-spb.jpg" class="slide active" alt="Катера">
+            <img src="images/67be0e9604c2fe619a95ca87.jpg" class="slide" alt="Лайнеры">
+            <img src="images/5946dd94900ba9b56b0d52c88fff9d0d.jpg" class="slide" alt="Яхты">
+            <img src="images/182.jpg" class="slide" alt="Безопасность">
+        </div>
+        <button class="slider-btn prev"><span>‹</span></button>
+        <button class="slider-btn next"><span>›</span></button>
+        <div class="slider-dots">
+            <button class="dot active"></button>
+            <button class="dot"></button>
+            <button class="dot"></button>
+            <button class="dot"></button>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>Наши направления</h3>
+        <div class="directions-grid">
+            <div class="direction-card">
+                <img src="images/image.jpeg" alt="Катера">
+                <span>Катера</span>
+            </div>
+            <div class="direction-card">
+                <img src="images/image (1).jpeg" alt="Яхты">
+                <span>Яхты</span>
+            </div>
+            <div class="direction-card">
+                <img src="images/image (2).jpeg" alt="Круизные лайнеры">
+                <span>Лайнеры</span>
+            </div>
+            <div class="direction-card">
+                <img src="images/image (3).jpeg" alt="Гидроциклы">
+                <span>Гидроциклы</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card card-turquoise">
+        <h3>История заявок</h3>
+        <div id="app-list"></div>
+    </div>
+
+    <script src="js/db.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/slider.js"></script>
+    <script>initDashboard();</script>
+</body>
+</html>

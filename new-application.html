@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новая заявка — Водить.РФ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wave"></div>
+    <div class="card">
+        <div class="logo-wrap">
+            <img src="images/boat.png" alt="Водить.РФ" class="logo-img">
+        </div>
+        <h2><span class="icon icon-turquoise">файл+</span> Оформление заявки</h2>
+        <div id="app-error" class="alert-error" hidden>
+            <span class="icon icon-gray">ошибка</span> <span></span>
+        </div>
+        <form id="app-form">
+            <div class="field">
+                <label>Вид транспорта</label>
+                <div class="input-wrap">
+                    <span class="icon icon-blue">волна</span>
+                    <select name="course" required>
+                        <option value="">— выберите вид транспорта —</option>
+                    </select>
+                </div>
+            </div>
+            <div class="field">
+                <label>Дата начала обучения</label>
+                <div class="input-wrap">
+                    <span class="icon icon-blue">календарь</span>
+                    <input type="text" name="date" placeholder="ДД.ММ.ГГГГ" required>
+                </div>
+            </div>
+            <div class="field">
+                <label>Способ оплаты</label>
+                <div class="input-wrap">
+                    <span class="icon icon-blue">карта</span>
+                    <select name="payment" required>
+                        <option value="">— выберите способ оплаты —</option>
+                        <option value="Предоплата по QR-коду">Предоплата по QR-коду</option>
+                        <option value="Оплата картой МИР">Оплата картой МИР</option>
+                        <option value="Постоплата в офисе организации">Постоплата в офисе организации</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-solid"><span class="icon icon-white">отправить</span> Отправить заявку</button>
+        </form>
+        <a class="link" href="dashboard.html">← Вернуться в личный кабинет</a>
+    </div>
+    <script src="js/db.js"></script>
+    <script src="js/app.js"></script>
+    <script>initApplication();</script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация — Водить.РФ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wave"></div>
+    <div class="card">
+        <div class="logo-wrap">
+            <img src="images/boat.png" alt="Водить.РФ" class="logo-img">
+        </div>
+        <h2><span class="icon icon-turquoise">пользователь+</span> Регистрация</h2>
+        <div id="reg-alert" class="alert-error" hidden>
+            <span class="icon icon-gray">ошибка</span> Исправьте ошибки в форме
+        </div>
+        <form id="reg-form">
+            <div class="field">
+                <label>Логин</label>
+                <div class="input-wrap">
+                    <span class="icon icon-blue">человек</span>
+                    <input type="text" name="login" required>
+                </div>
+                <span class="hint" id="err-login"></span>
+            </div>
+            <div class="field">
+                <label>Пароль</label>
+                <div class="input-wrap">
+                    <span class="icon icon-blue">замок</span>
+                    <input type="password" name="password" required>
+                </div>
+                <span class="hint" id="err-password"></span>
+            </div>
+            <div class="field">
+                <label>ФИО</label>
+                <div class="input-wrap">
+                    <span class="icon icon-blue">текст</span>
+                    <input type="text" name="fullname" required>
+                </div>
+                <span class="hint" id="err-fullname"></span>
+            </div>
+            <div class="field">
+                <label>Дата рождения</label>
+                <div class="input-wrap">
+                    <span class="icon icon-blue">день рождения</span>
+                    <input type="text" name="birthDate" placeholder="ДД.ММ.ГГГГ" required>
+                </div>
+                <span class="hint" id="err-birthDate"></span>
+            </div>
+            <div class="field">
+                <label>Телефон</label>
+                <div class="input-wrap">
+                    <span class="icon icon-blue">телефон</span>
+                    <input type="tel" name="phone" required>
+                </div>
+                <span class="hint" id="err-phone"></span>
+            </div>
+            <div class="field">
+                <label>E-mail</label>
+                <div class="input-wrap">
+                    <span class="icon icon-blue">письмо</span>
+                    <input type="email" name="email" required>
+                </div>
+                <span class="hint" id="err-email"></span>
+            </div>
+            <button type="submit" class="btn btn-solid"><span class="icon icon-white">галка</span> Зарегистрироваться</button>
+        </form>
+        <a class="link" href="index.html">Уже есть аккаунт? Войти</a>
+    </div>
+    <div class="deco-img-wrap">
+        <img src="images/1498802745470_bulletin.jpg" alt="Водный транспорт" class="deco-img">
+    </div>
+    <script src="js/db.js"></script>
+    <script src="js/app.js"></script>
+    <script>initRegister();</script>
+</body>
+</html>

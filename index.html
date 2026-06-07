@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход — Водить.РФ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wave"></div>
+    <div class="card">
+        <div class="logo-wrap">
+            <img src="images/boat.png" alt="Водить.РФ" class="logo-img">
+        </div>
+        <h2><span class="icon icon-blue">волна</span> Водить.РФ</h2>
+        <h3>Вход в систему</h3>
+        <div id="login-error" class="alert-error" hidden>
+            <span class="icon icon-gray">ошибка</span> Неверный логин или пароль
+        </div>
+        <form id="login-form">
+            <div class="field">
+                <label>Логин</label>
+                <div class="input-wrap">
+                    <span class="icon icon-blue">человек</span>
+                    <input type="text" name="login" required placeholder="Введите логин">
+                </div>
+            </div>
+            <div class="field">
+                <label>Пароль</label>
+                <div class="input-wrap">
+                    <span class="icon icon-blue">замок</span>
+                    <input type="password" name="password" required placeholder="Введите пароль">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-solid"><span class="icon icon-white">вход</span> Войти</button>
+        </form>
+        <a class="link" href="register.html">Еще не зарегистрированы? Регистрация</a>
+    </div>
+    <div class="deco-img-wrap">
+        <img src="images/6055993d3dba6_havnekalesje.png" alt="Причал" class="deco-img">
+    </div>
+    <script src="js/db.js"></script>
+    <script src="js/app.js"></script>
+    <script>initLogin();</script>
+</body>
+</html>
